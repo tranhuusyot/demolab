@@ -1,0 +1,59 @@
+﻿<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="maytinh.css"/>
+</head>
+<body>
+<div id="calcu">
+<fOrm name="maytinh" >
+	
+	<input type = "text" name ="pheptinh" placeholder="EMPTY NOW" />
+	<input type = "reset" vallue = "Del"/></br>
+
+	<input type ="button" value ="7" onclick = "number7()"; />
+	<input type ="button" value ="8" onclick = "number8()"; />
+	<input type ="button" value ="9" onclick = "number9()"; />
+	<input type ="button" value ="/" onclick = "phepchia()"; />	</br>
+
+	<input type ="button" value ="4" onclick = "number4()"; />
+	<input type ="button" value ="5" onclick = "number5()"; />
+	<input type ="button" value ="6" onclick = "number6()"; />
+	<input type ="button" value ="*" onclick = "phepnhan()"; />	</br>
+
+	<input type ="button" value ="1" onclick = "number1()"; />
+	<input type ="button" value ="2" onclick = "number2()"; />
+	<input type ="button" value ="3" onclick = "number3()"; />
+	<input type ="button" value ="+" onclick = "phepcong()"; />	</br>
+
+	<input type ="button" value ="0" onclick = "number0()"; />
+	<input type ="button" value ="." onclick = "daucham()"; />
+	<input type ="button" value ="=" onclick = "daubang()"; />
+	<input type ="button" value ="-" onclick = "pheptru()"; /> 	</br>
+</div>
+
+<script type= "text/javascript">
+	function number1() {document.maytinh.pheptinh.value += "1";}
+	function number2() {document.maytinh.pheptinh.value += "2";}
+	function number3() {document.maytinh.pheptinh.value += "3";}
+	function number4() {document.maytinh.pheptinh.value += "4";}
+	function number5() {document.maytinh.pheptinh.value += "5";}
+	function number6() {document.maytinh.pheptinh.value += "6";}
+	function number7() {document.maytinh.pheptinh.value += "7";}
+	function number8() {document.maytinh.pheptinh.value += "8";}
+	function number9() {document.maytinh.pheptinh.value += "9";}
+	function number0() {document.maytinh.pheptinh.value += "0";}
+
+	function phepcong() {document.maytinh.pheptinh.value += "+";}
+	function pheptru()  {document.maytinh.pheptinh.value += "-";}
+	function phepnhan() {document.maytinh.pheptinh.value += "*";}
+	function phepchia() {document.maytinh.pheptinh.value += "/";}
+
+	function daucham()  {document.maytinh.pheptinh.value += ".";}
+	function daubang()  {
+				var bang = eval(document.maytinh.pheptinh.value);
+				document.maytinh.pheptinh.value = bang;
+				alert("Kết quả  phép tính là: "+bang);
+				}
+</script>
+
+</body>
+</html>
